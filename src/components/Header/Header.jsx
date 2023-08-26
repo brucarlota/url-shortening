@@ -41,7 +41,7 @@ const Header = () => {
         </UnorderedList>
       </MenuNav>
     </StyledHeader>
-  )
-}
+  );
+};
 
 export default Header;
