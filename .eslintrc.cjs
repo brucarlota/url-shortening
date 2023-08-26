@@ -16,5 +16,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'semi': [2, 'always'],
+    'react/prop-types': 0,
   },
 }

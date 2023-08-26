@@ -8,16 +8,22 @@ export const StyledHeader = styled.header`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-
 `;
 
 export const Logo = styled.div`
   display: flex;
   flex: initial;
   width: 125px;
+  align-self: center;
 
   a {
     display: flex;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 30px;
   }
 `;
 
@@ -28,20 +34,20 @@ export const MenuNav = styled.nav`
   flex: auto;
   align-items: center;
   color: rgb(152,152,152);
-  width: ${(props) => props.collapse ? 'calc(100% - 125px)' : 'auto'};
+  width: ${(props) => props.$collapse ? 'calc(100% - 125px)' : 'auto'};
 
   @media screen and (max-width: 768px) {
-    display: ${(props) => props.collapse ? 'none' : 'flex'};
+    display: ${(props) => props.$collapse ? 'flex' : 'none'};
     list-style: none;
     margin: 0;
     text-align: center;
     flex-direction: column;
-
     border-radius: 0.625rem;
     background: #3A3054;
     padding: 1.5rem;
-    margin-top: 1.46rem;
+    margin-top: 3.46rem;
     min-width: 200px;
+    align-self: center;
   }
 `;
 
@@ -57,11 +63,12 @@ export const UnorderedList = styled.ul`
   @media screen and (max-width: 768px) {
     list-style: none;
     margin: 0;
-    width: 125px;
     text-align: center;
+    padding: 0;
 
     li {
       display: block;
+      padding: 5px 0;
 
       a {
         font-size: 1.125rem;
