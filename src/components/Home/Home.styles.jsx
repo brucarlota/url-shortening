@@ -46,6 +46,48 @@ export const SectionCards = styled.section`
 `;
 
 
-export const ShortenLink = styled.section``;
+export const ShortenLink = styled.div`
+  background-color: #3A3054;
+  background-image: url('./src/assets/images/bg-boost-desktop.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 55%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+`;
+
+export const ShortenLinkResult = styled.div`
+  margin: 40px 0;
+
+  .item {
+    background-color: #FFF;
+    color: #34313D;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .item__description {
+    overflow: hidden;
+  }
+  
+  .item__copy {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 12px;
+
+    .shortlink {
+      color: #2BD0D0;
+      padding-right: 1.5rem;
+    }
+  }
+`;
 export const Cards = styled.section``;
 export const SectionGetStarted = styled.section``;

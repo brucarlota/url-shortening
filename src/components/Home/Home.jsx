@@ -1,7 +1,10 @@
 import Button, { Shape } from "../Button/Button";
-import { MainContent, SectionCards, SectionHighlights } from "./Home.styles";
+import Input from "../Input/Input";
+import { MainContent, SectionCards, SectionHighlights, ShortenLink, ShortenLinkResult } from "./Home.styles";
 
 const Home = () => {
+  const ariaLabel = { 'aria-label': 'Shorten link input' };
+
   return (
     <MainContent>
       <SectionHighlights>
@@ -17,7 +20,29 @@ const Home = () => {
       </SectionHighlights>
 
       <SectionCards>
-        help
+        <div>
+          <ShortenLink role="inputLink">
+            <Input id="input" placeholder="Shorten a link here..." inputProps={ariaLabel} />
+            <Button id="Cards__ShortenLink" shape={Shape.square} text="Shorten It!" bgcolor="#2BD0D0" />
+          </ShortenLink>
+          <ShortenLinkResult>
+            <div className="item">
+              <p className="item__description">https://jocumpantanal.ong.br</p>
+              <div className="item__copy">
+                <p className="shortlink">https://shortlink</p>
+                <Button id="copyButton" shape={Shape.square} bgcolor="#2BD0D0" text="Copy" />
+              </div>
+            </div>
+            <div className="item">
+              <p className="item__description">https://jocumpantanal.ong.br</p>
+              <div className="item__copy">
+                <p className="shortlink">https://shortlink</p>
+                <Button id="copyButton" shape={Shape.square} bgcolor="#2BD0D0" text="Copy" />
+              </div>
+            </div>
+          </ShortenLinkResult>
+        </div>
+        
       </SectionCards>
 
     </MainContent>
