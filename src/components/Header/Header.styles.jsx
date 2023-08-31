@@ -5,7 +5,7 @@ export const StyledHeader = styled.header`
   flex-wrap: wrap;
   padding: 40px 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 825px) {
     flex-direction: column;
   }
 `;
@@ -48,12 +48,18 @@ export const MenuNav = styled.nav`
     margin-top: 3.46rem;
     min-width: 200px;
     align-self: center;
+
+    ul {
+      flex-direction: column;
+    }
   }
 `;
 
 export const UnorderedList = styled.ul`
   list-style: none;
   margin: 0;
+  display: flex;
+  align-items: center;
 
   li {
     display: inline;

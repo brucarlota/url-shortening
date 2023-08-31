@@ -15,6 +15,10 @@ export const StyledButton = styled(Button)`
     text-transform: capitalize;
     padding: 0.78rem 2.5rem;
     height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: ${(props) => props.align}
   }
 
   &&:hover {

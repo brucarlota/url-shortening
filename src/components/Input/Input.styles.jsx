@@ -3,7 +3,6 @@ import Input from "@mui/material/Input";
 
 export const StyledInput = styled(Input)`
   && {
-    margin-right: 20px;
     border-radius: 8px;
     padding: 13px;
     background: #fff;

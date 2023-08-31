@@ -13,3 +13,20 @@ a {
   text-decoration: none;
   color: #9E9AA8;
 }
+
+.container {
+  padding: 0 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: auto;
+  justify-content: inherit;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 1.5rem;
+    flex-direction: inherit;
+    text-align: center;
+    justify-content: center;
+  }
+}

@@ -5,9 +5,9 @@ export const Shape = {
   circle: 'circle',
 } ;
 
-const Button = ({id, shape, bgcolor, link, text}) => {
+const Button = ({id, shape, bgcolor, link, text, align}) => {
   return (
-    <StyledButton id={id} href={link} shape={shape} bgcolor={bgcolor}>{text}</StyledButton>
+    <StyledButton id={id} className={id} href={link} shape={shape} bgcolor={bgcolor} align={align}>{text}</StyledButton>
   );
 };
 

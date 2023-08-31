@@ -12,34 +12,36 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <Logo>
-        <a href="#">
-          <img src="./src/assets/images/logo.svg" alt="" />
-        </a>
-      </Logo>
+      <div className="container">
+        <Logo>
+          <a href="#">
+            <img src="./src/assets/images/logo.svg" alt="" />
+          </a>
+        </Logo>
 
-      <MenuCollapse onClick={handleMenu}>
-        <MenuIcon></MenuIcon>
-      </MenuCollapse>
+        <MenuCollapse onClick={handleMenu}>
+          <MenuIcon></MenuIcon>
+        </MenuCollapse>
 
-      <MenuNav $collapse={isCollapsed}>
-        <UnorderedList>
-          <li><a href=".">Features</a></li>
-          <li><a href=".">Pricing</a></li>
-          <li><a href=".">Resources</a></li>
-        </UnorderedList>
-        <StyledDivider></StyledDivider>
-        <UnorderedList>
-          <li><a href=".">Login</a></li>
-          <li>
-            <Button 
-              id="SignIn__Button"
-              shape={Shape.circle}
-              bgcolor="#2BD0D0"
-              text="Sign in"  />
-          </li>
-        </UnorderedList>
-      </MenuNav>
+        <MenuNav $collapse={isCollapsed}>
+          <UnorderedList>
+            <li><a href=".">Features</a></li>
+            <li><a href=".">Pricing</a></li>
+            <li><a href=".">Resources</a></li>
+          </UnorderedList>
+          <StyledDivider></StyledDivider>
+          <UnorderedList className='login'>
+            <li><a href=".">Login</a></li>
+            <li>
+              <Button 
+                id="SignIn__Button"
+                shape={Shape.circle}
+                bgcolor="#2BD0D0"
+                text="Sign in"  />
+            </li>
+          </UnorderedList>
+        </MenuNav>
+      </div>
     </StyledHeader>
   );
 };
