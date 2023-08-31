@@ -103,6 +103,16 @@ export const SectionCards = styled.section`
     flex-direction: row;
     position: relative;
     justify-content: center;
+    gap: 2rem;
+  }
+
+  .cards:after {
+    content: "";
+    width: 60%;
+    height: 5px;
+    background-color: rgb(42, 207, 207);
+    position: relative;
+    margin-top: -25%;
   }
 `;
 
@@ -120,7 +130,7 @@ export const ShortenLink = styled.div`
   border-radius: 15px;
   width: 100%;
   margin-top: -3.7rem;
-  gap: 1rem;
+  gap: 1.5rem;
 
   @media screen and (max-width: 768px) {
     button {

@@ -68,8 +68,6 @@ const Home = () => {
 
                 <Card id="card-3" title="Fully Customizable" text="Improve brand awareness and content discoverability through customizable 
       links, supercharging audience engagement." image="icon-fully-customizable.svg" />
-
-                <div className="line"></div>
               </div>
             </CardsSection>
           </div>

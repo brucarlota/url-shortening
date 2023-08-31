@@ -7,13 +7,14 @@ export const StyledCard = styled(Card)`
     background: #FFF;
     border: none;
     padding: 2rem;
-    max-width: 21.875rem;
+    max-width: 15rem;
     max-height: 16.6875rem;
-    margin: 40px;
+    margin: 2.5rem 0;
     overflow: visible;
     display: flex;
     flex-wrap: wrap;
     align-content: end;
+    z-index:1;
 
     .cardContent {
       padding: 0;
@@ -27,9 +28,11 @@ export const StyledCard = styled(Card)`
   }
 
   &&.card-2 { 
+    margin-top: 5rem;
   };
 
   &&.card-3 { 
+    margin-top: 7.5rem;
   };
 
   .subtitle {
