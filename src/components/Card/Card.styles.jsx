@@ -24,6 +24,7 @@ export const StyledCard = styled(Card)`
       justify-content: center;
       align-content: initial;
       max-height: initial;
+      margin-top: 3rem !important;
     }
   }
 

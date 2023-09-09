@@ -107,6 +107,8 @@ export const SectionCards = styled.section`
     
     @media screen and (max-width: 768px) {
       gap: 1rem;
+      flex-direction: column;
+      align-items: center;
     }
   }
 `;
@@ -218,5 +220,21 @@ export const SectionGetStarted = styled.section`
     @media screen and (max-width: 768px) {
       font-size: 1.75rem;
     }
+  }
+`;
+
+export const StyledLine = styled.div`
+  width: 80%;
+  height: 5px;
+  background-color: rgb(42, 207, 207);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+
+  @media screen and (max-width: 768px) {
+    width: 5px;
+    height: 80%;
+    top: 0;
+    left: 50%;
   }
 `;
