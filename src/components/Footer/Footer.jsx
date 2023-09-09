@@ -1,6 +1,7 @@
-import { StyledFooter } from "./Footer.styles";
+import { StyledFooter, StyleAttribution } from "./Footer.styles";
 const Footer = () => {
   return (
+    <>
     <StyledFooter>
       <div className="container">
         <div className="logo">
@@ -45,6 +46,11 @@ const Footer = () => {
         </div>
       </div>
     </StyledFooter>
+    <StyleAttribution>
+      Challenge by <a href="https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+      Coded by <a href="https://brucarlota.github.io/profile/">Bruna Carlota</a>.
+    </StyleAttribution>
+    </>
   );
 };
 

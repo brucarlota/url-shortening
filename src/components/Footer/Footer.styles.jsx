@@ -79,3 +79,16 @@ export const StyledFooter = styled.div`
     }
   }
 `;
+
+export const StyleAttribution = styled.div`
+  background: #232127;
+  display: block;
+  justify-content: center;
+  font-weight: normal;
+  padding-bottom: 10px;
+
+  a {
+    padding-left: 4px;
+    font-weight: bold;
+  }
+`;
