@@ -105,7 +105,7 @@ export const SectionCards = styled.section`
     justify-content: center;
     gap: 2rem;
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1296px) {
       gap: 1rem;
       flex-direction: column;
       align-items: center;
@@ -155,6 +155,7 @@ export const ShortenLinkResult = styled.div`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 500px;
 
     @media screen and (max-width: 768px) {
       width: 100%;
@@ -236,5 +237,9 @@ export const StyledLine = styled.div`
     height: 80%;
     top: 0;
     left: 50%;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1296px) {
+    display: none;
   }
 `;

@@ -22,10 +22,15 @@ a {
   justify-content: inherit;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1296px) {
   .container {
     padding: 0 1.5rem;
     flex-direction: inherit;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
     text-align: center;
     justify-content: center;
   }

@@ -21,9 +21,8 @@ export const Logo = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    left: 30px;
+    justify-content: space-between;
+    width: 100%;
   }
 `;
 
@@ -88,9 +87,7 @@ export const MenuCollapse = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    right: 30px;
+    display: flex;
   }
 `;
 

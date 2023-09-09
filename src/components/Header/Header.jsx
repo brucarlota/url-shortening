@@ -17,11 +17,11 @@ const Header = () => {
           <a href=".">
             <img src="./src/assets/images/logo.svg" alt="Shortly logo" />
           </a>
-        </Logo>
 
-        <MenuCollapse onClick={handleMenu}>
-          <MenuIcon></MenuIcon>
-        </MenuCollapse>
+          <MenuCollapse onClick={handleMenu}>
+            <MenuIcon></MenuIcon>
+          </MenuCollapse>
+        </Logo>
 
         <MenuNav $collapse={isCollapsed}>
           <UnorderedList>
