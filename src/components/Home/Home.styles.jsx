@@ -104,18 +104,12 @@ export const SectionCards = styled.section`
     position: relative;
     justify-content: center;
     gap: 2rem;
-  }
-
-  .cards:after {
-    content: "";
-    width: 60%;
-    height: 5px;
-    background-color: rgb(42, 207, 207);
-    position: relative;
-    margin-top: -25%;
+    
+    @media screen and (max-width: 768px) {
+      gap: 1rem;
+    }
   }
 `;
-
 
 export const ShortenLink = styled.div`
   background-color: #3A3054;
@@ -156,7 +150,9 @@ export const ShortenLinkResult = styled.div`
   }
 
   .item__description {
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 
     @media screen and (max-width: 768px) {
       width: 100%;

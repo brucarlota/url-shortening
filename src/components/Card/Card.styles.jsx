@@ -8,7 +8,7 @@ export const StyledCard = styled(Card)`
     border: none;
     padding: 2rem;
     max-width: 15rem;
-    max-height: 16.6875rem;
+    max-height: 15.6875rem;
     margin: 2.5rem 0;
     overflow: visible;
     display: flex;

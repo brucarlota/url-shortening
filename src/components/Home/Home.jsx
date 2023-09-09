@@ -9,9 +9,34 @@ import {  CardsSection,
           SectionGetStarted 
         } from "./Home.styles";
 import Card from "../Card/Card";
+import useSearch from "../../hooks/useSearch";
+import { useState, useEffect } from "react";
 
 const Home = () => {
   const ariaLabel = { 'aria-label': 'Shorten link input' };
+  const [value, setValue] = useState();
+  const [shortenLinksList, setShortenLinksList] = useState([]);
+  const { request, result } = useSearch();
+
+  const handleInputValue = (value) => {
+    setValue(value);
+  };
+
+  const handleOnSearch = async () => {
+    request(value);
+  };
+  
+  useEffect(() => {
+    if (result) {
+      setShortenLinksList((prevstate) => [...prevstate, { inputValue: value, link: result}]);
+    }
+  }, [result]);
+
+  const handleCopyText = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      console.log('sucesso');
+    });
+  };
 
   return (
     <MainContent>
@@ -21,7 +46,7 @@ const Home = () => {
             <h1 className="title">More than just links</h1>
             <p className="text">Build your brand&apos;s recognition and get detailed insights 
       on how your links are performing.</p>
-            <Button id="highlights__getStarted" bgcolor="#2BD0D0" text="Get started" shape={Shape.circle}/>
+            <Button id="highlights__getStarted" bgcolor="#2BD0D0" text="Get started" shape={Shape.circle} />
           </div>
           <div>
             <img className="image" src="./src/assets/images/illustration-working.svg" alt="" />
@@ -32,24 +57,21 @@ const Home = () => {
       <SectionCards>
           <div className="container">
             <ShortenLink role="inputLink">
-              <Input id="input" placeholder="Shorten a link here..." inputProps={ariaLabel} />
-              <Button id="Cards__ShortenLink" shape={Shape.square} text="Shorten It!" bgcolor="#2BD0D0" />
+              <Input id="input" placeholder="Shorten a link here..." inputProps={ariaLabel} handleInputValue={handleInputValue} />
+              <Button id="Cards__ShortenLink" shape={Shape.square} text="Shorten It!" bgcolor="#2BD0D0" handleAction={handleOnSearch} />
             </ShortenLink>
             <ShortenLinkResult>
-              <div className="item">
-                <p className="item__description">https://jocumpantanal.ong.br</p>
+              {!!shortenLinksList.length && shortenLinksList.map((shortenLink, index) => (
+                <div className="item" key={`${shortenLink}-${index}`}>
+                <p className="item__description">{shortenLink.inputValue}</p>
                 <div className="item__copy">
-                  <p className="shortlink">https://shortlink</p>
-                  <Button id="copyButton" shape={Shape.square} bgcolor="#2BD0D0" text="Copy" />
+                  <p className="shortlink">{shortenLink.link}</p>
+                  <Button id="copyButton" shape={Shape.square} bgcolor="#2BD0D0" text="Copy" handleAction={() => handleCopyText(shortenLink.link)} />
                 </div>
               </div>
-              <div className="item">
-                <p className="item__description">https://jocumpantanal.ong.br</p>
-                <div className="item__copy">
-                  <p className="shortlink">https://shortlink</p>
-                  <Button id="copyButton" shape={Shape.square} bgcolor="#2BD0D0" text="Copy" />
-                </div>
-              </div>
+              ))
+              }
+              
             </ShortenLinkResult>
 
             <CardsSection>

@@ -14,8 +14,8 @@ const Header = () => {
     <StyledHeader>
       <div className="container">
         <Logo>
-          <a href="#">
-            <img src="./src/assets/images/logo.svg" alt="" />
+          <a href=".">
+            <img src="./src/assets/images/logo.svg" alt="Shortly logo" />
           </a>
         </Logo>
 
