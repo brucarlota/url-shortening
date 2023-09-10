@@ -83,7 +83,7 @@ export const StyledFooter = styled.div`
 export const StyleAttribution = styled.div`
   background: #232127;
   display: block;
-  justify-content: center;
+  text-align: center;
   font-weight: normal;
   padding-bottom: 10px;
 

@@ -6,7 +6,7 @@ const Card = ({ id, image, title, text }) => {
     <StyledCard className={id} variant="outlined">
       { image && 
         <ImageWrapper>
-          <img src={`./src/assets/images/${image}`} alt="Brand recognition icon" />
+          <img src={`/images/${image}`} alt="Brand recognition icon" />
         </ImageWrapper>
       }
       <CardContent className="cardContent">

@@ -5,7 +5,7 @@ const Footer = () => {
     <StyledFooter>
       <div className="container">
         <div className="logo">
-          <img src="./src/assets/images/logo-white.svg" alt="Logo" />
+          <img src="/images/logo-white.svg" alt="Logo" />
         </div>
         <div className="links">
           <div>
@@ -38,10 +38,10 @@ const Footer = () => {
         </div>
         <div className="social-media">
           <ul>
-            <li><a href=""><img src="./src/assets/images/icon-facebook.svg" alt="" /></a></li>
-            <li><a href=""><img src="./src/assets/images/icon-instagram.svg" alt="" /></a></li>
-            <li><a href=""><img src="./src/assets/images/icon-pinterest.svg" alt="" /></a></li>
-            <li><a href=""><img src="./src/assets/images/icon-twitter.svg" alt="" /></a></li>
+            <li><a href=""><img src="/images/icon-facebook.svg" alt="social icon facebook" /></a></li>
+            <li><a href=""><img src="/images/icon-instagram.svg" alt="social icon instagram" /></a></li>
+            <li><a href=""><img src="/images/icon-pinterest.svg" alt="social icon pinterest" /></a></li>
+            <li><a href=""><img src="/images/icon-twitter.svg" alt="social icon twitter" /></a></li>
           </ul>
         </div>
       </div>

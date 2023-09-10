@@ -115,7 +115,7 @@ export const SectionCards = styled.section`
 
 export const ShortenLink = styled.div`
   background-color: #3A3054;
-  background-image: url('./src/assets/images/bg-boost-desktop.svg');
+  background-image: url('/images/bg-boost-desktop.svg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 50% 55%;
@@ -203,7 +203,7 @@ export const CardsSection = styled.section`
 `;
 export const SectionGetStarted = styled.section`
   background-color: #3A3054;
-  background-image: url('./src/assets/images/bg-boost-desktop.svg');
+  background-image: url('./images/bg-boost-desktop.svg');
   background-repeat: no-repeat;
   background-position: 50% 55%;
   background-size: 100% 100%;

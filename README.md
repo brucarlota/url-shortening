@@ -5,7 +5,7 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 ### Links
 
 - Solution URL: [Github](https://github.com/brucarlota/url-shortening)
-- Live Site URL: [](https://your-live-site-url.com)
+- Live Site URL: [](https://url-shortening-bcc.vercel.app/)
 
 ## My process
 

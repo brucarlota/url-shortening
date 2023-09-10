@@ -50,7 +50,7 @@ const Home = () => {
             <Button id="highlights__getStarted" bgcolor="#2BD0D0" text="Get started" shape={Shape.circle} />
           </div>
           <div>
-            <img className="image" src="/src/assets/images/illustration-working.svg" alt="" />
+            <img className="image" src="/images/illustration-working.svg" alt="" />
           </div>
         </div>
       </SectionHighlights>

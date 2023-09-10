@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container">
         <Logo>
           <a href=".">
-            <img src="/src/assets/images/logo.svg" alt="Shortly logo" />
+            <img src="/images/logo.svg" alt="Shortly logo" />
           </a>
 
           <MenuCollapse onClick={handleMenu}>
